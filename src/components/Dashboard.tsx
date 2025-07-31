@@ -19,6 +19,7 @@ const Dashboard: React.FC<DashboardProps> = ({ labs, onSelectLab }) => {
       case 'Beginner': return 'bg-green-500';
       case 'Intermediate': return 'bg-yellow-500';
       case 'Advanced': return 'bg-red-500';
+      case 'Expert': return 'bg-purple-500';
       default: return 'bg-gray-500';
     }
   };
@@ -44,12 +45,12 @@ const Dashboard: React.FC<DashboardProps> = ({ labs, onSelectLab }) => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-lg p-6 text-center">
           <BookOpen className="w-8 h-8 text-blue-400 mx-auto mb-2" />
-          <div className="text-2xl font-bold text-white mb-1">5</div>
+          <div className="text-2xl font-bold text-white mb-1">8</div>
           <div className="text-slate-400">Interactive Labs</div>
         </div>
         <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-lg p-6 text-center">
           <Clock className="w-8 h-8 text-green-400 mx-auto mb-2" />
-          <div className="text-2xl font-bold text-white mb-1">2-3 hrs</div>
+          <div className="text-2xl font-bold text-white mb-1">4-5 hrs</div>
           <div className="text-slate-400">Total Duration</div>
         </div>
         <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-lg p-6 text-center">
