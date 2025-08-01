@@ -140,8 +140,8 @@ const Lab7: React.FC<Lab7Props> = ({ onBack }) => {
                   <h4 className="text-white font-medium mb-2">Redirection</h4>
                   <div className="text-xs space-y-1">
                     <p><code className="text-yellow-400">/dev/null</code> - Discard output</p>
-                    <p><code className="text-yellow-400">2>&1</code> - Redirect stderr to stdout</p>
-                    <p><code className="text-yellow-400">&></code> - Redirect both stdout and stderr</p>
+                    <p><code className="text-yellow-400">2&gt;&amp;1</code> - Redirect stderr to stdout</p>
+                    <p><code className="text-yellow-400">&amp;&gt;</code> - Redirect both stdout and stderr</p>
                   </div>
                 </div>
               </div>
