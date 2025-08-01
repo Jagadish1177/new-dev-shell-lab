@@ -4,7 +4,7 @@ services:
   devops-shell-lab:
     build: .
     ports:
-      - "3000:80"
+      - "8080:80"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
